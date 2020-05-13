@@ -1,0 +1,7 @@
+---
+- hosts: win
+  tasks:
+  - name: stop Plug and Play service
+    win_service:
+      name: "Plug and play"
+      state: started

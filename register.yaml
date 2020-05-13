@@ -1,0 +1,8 @@
+---
+- hosts: linux
+  tasks:
+  - name: print output
+    shell: echo $HOSTNAME
+    register: output
+  - debug: msg="standard output={{output.stdout}}"
+  - debug: msg="standard output={{output.stderr}}"
