@@ -3,7 +3,7 @@
   tasks:
   - name: upload file to target server
     copy:
-      src: program.sh
+      src: files/program.sh
       dest: /home/ansible/program.sh
       mode: 0755
   - name: modify the script
