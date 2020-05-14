@@ -1,5 +1,5 @@
 ---
-- hosts: linux
+- hosts: all
   tasks:
   - name: upload file to target server
     copy:
